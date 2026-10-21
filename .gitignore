@@ -1,0 +1,46 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+.aws/
+
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Runtime data and local test artifacts
+data/
+outputs/
+logs/
+temp/
+tmp/
+azure_download_test/
+data_contract_check/
+
+# Databases and generated outputs
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.log
+*.xlsx
+*.html
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1862 @@
+[
+  {
+    "id": 1,
+    "key": "total_employees",
+    "question": "Şirketin toplam çalışan sayısı kaçtır?",
+    "source_column": "E",
+    "original_header": "total number of employees in",
+    "group": "workforce",
+    "group_order": 1,
+    "esg_category": "social",
+    "topic": "employees",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "total employees",
+      "total number of employees",
+      "employee headcount",
+      "workforce size",
+      "toplam çalışan",
+      "çalışan sayısı",
+      "personel sayısı",
+      "headcount",
+      "total workforce",
+      "total employee headcount",
+      "number of employees at year end",
+      "employees by gender total",
+      "employee data total",
+      "workforce data total"
+    ],
+    "expected_units": [
+      "person",
+      "people",
+      "employee",
+      "employees",
+      "kişi"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 2,
+    "key": "female_employees",
+    "question": "Şirketin toplam kadın çalışan sayısı kaçtır?",
+    "source_column": "F",
+    "original_header": "total number of female employees in",
+    "group": "workforce",
+    "group_order": 1,
+    "esg_category": "social",
+    "topic": "employees",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "female employees",
+      "women employees",
+      "female workforce",
+      "number of women employees",
+      "kadın çalışan",
+      "kadın personel",
+      "kadın çalışan sayısı",
+      "total female employees",
+      "number of female employees",
+      "female employee headcount",
+      "women employee headcount",
+      "employees by gender female",
+      "female total"
+    ],
+    "expected_units": [
+      "person",
+      "people",
+      "employee",
+      "employees",
+      "kişi"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 3,
+    "key": "male_employees",
+    "question": "Şirketin toplam erkek çalışan sayısı kaçtır?",
+    "source_column": "G",
+    "original_header": "total number of male employees in",
+    "group": "workforce",
+    "group_order": 1,
+    "esg_category": "social",
+    "topic": "employees",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "male employees",
+      "men employees",
+      "male workforce",
+      "number of men employees",
+      "erkek çalışan",
+      "erkek personel",
+      "erkek çalışan sayısı",
+      "total male employees",
+      "number of male employees",
+      "male employee headcount",
+      "men employee headcount",
+      "employees by gender male",
+      "male total"
+    ],
+    "expected_units": [
+      "person",
+      "people",
+      "employee",
+      "employees",
+      "kişi"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 4,
+    "key": "white_collar_employees",
+    "question": "Şirketin toplam beyaz yaka çalışan sayısı kaçtır?",
+    "source_column": "H",
+    "original_header": "total number of white collar employees in",
+    "group": "workforce",
+    "group_order": 1,
+    "esg_category": "social",
+    "topic": "employees",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "white-collar employees",
+      "white collar workforce",
+      "salaried employees",
+      "office employees",
+      "beyaz yaka çalışan",
+      "beyaz yakalı personel",
+      "total white collar employees",
+      "number of white collar employees",
+      "white collar employee headcount",
+      "salaried employee headcount",
+      "employees by employment category white collar"
+    ],
+    "expected_units": [
+      "person",
+      "people",
+      "employee",
+      "employees",
+      "kişi"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 5,
+    "key": "blue_collar_employees",
+    "question": "Şirketin toplam mavi yaka çalışan sayısı kaçtır?",
+    "source_column": "I",
+    "original_header": "total number of blue collar employees in",
+    "group": "workforce",
+    "group_order": 1,
+    "esg_category": "social",
+    "topic": "employees",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "blue-collar employees",
+      "blue collar workforce",
+      "hourly employees",
+      "production employees",
+      "mavi yaka çalışan",
+      "mavi yakalı personel",
+      "total blue collar employees",
+      "number of blue collar employees",
+      "blue collar employee headcount",
+      "hourly worker headcount",
+      "employees by employment category blue collar"
+    ],
+    "expected_units": [
+      "person",
+      "people",
+      "employee",
+      "employees",
+      "kişi"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 6,
+    "key": "female_executives_managers",
+    "question": "Şirketteki toplam kadın yönetici sayısı kaçtır?",
+    "source_column": "J",
+    "original_header": "total number of female executives-managers in",
+    "group": "workforce",
+    "group_order": 1,
+    "esg_category": "social",
+    "topic": "employees",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "female executives",
+      "female managers",
+      "women in management",
+      "women executives",
+      "female senior management",
+      "kadın yönetici",
+      "kadın yöneticiler",
+      "kadın üst düzey yönetici",
+      "total female managers",
+      "number of female managers",
+      "female management headcount",
+      "women managers total",
+      "female executives total",
+      "management by gender female"
+    ],
+    "expected_units": [
+      "person",
+      "people",
+      "manager",
+      "managers",
+      "kişi"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 7,
+    "key": "male_executives_managers",
+    "question": "Şirketteki toplam erkek yönetici sayısı kaçtır?",
+    "source_column": "K",
+    "original_header": "total number of male executives-managers in",
+    "group": "workforce",
+    "group_order": 1,
+    "esg_category": "social",
+    "topic": "employees",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "male executives",
+      "male managers",
+      "men in management",
+      "men executives",
+      "male senior management",
+      "erkek yönetici",
+      "erkek yöneticiler",
+      "erkek üst düzey yönetici",
+      "total male managers",
+      "number of male managers",
+      "male management headcount",
+      "men managers total",
+      "male executives total",
+      "management by gender male"
+    ],
+    "expected_units": [
+      "person",
+      "people",
+      "manager",
+      "managers",
+      "kişi"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 8,
+    "key": "injury_rate",
+    "question": "Şirketin toplam iş kazası oranı nedir?",
+    "source_column": "L",
+    "original_header": "total injury rate for",
+    "group": "occupational_health_safety",
+    "group_order": 2,
+    "esg_category": "social",
+    "topic": "occupational_health_and_safety",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "injury rate",
+      "occupational injury rate",
+      "work-related injury rate",
+      "TRIR",
+      "total recordable injury rate",
+      "LTIFR",
+      "lost time injury frequency rate",
+      "iş kazası oranı",
+      "kaza sıklık oranı",
+      "total recordable incident rate",
+      "total recordable injury frequency rate",
+      "recordable work-related injury rate",
+      "lost time incident frequency rate",
+      "lost time injury rate",
+      "work accident frequency rate",
+      "occupational accident frequency rate",
+      "GRI 403-9 injury rate"
+    ],
+    "expected_units": [
+      "rate",
+      "%",
+      "per 200,000 working hours",
+      "per 1,000,000 working hours",
+      "TRIR",
+      "LTIFR",
+      "per 1,000,000 hours worked",
+      "per million hours worked"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 9,
+    "key": "severity_rate",
+    "question": "Şirketin toplam iş kazası ağırlık oranı nedir?",
+    "source_column": "M",
+    "original_header": "total severity rate for",
+    "group": "occupational_health_safety",
+    "group_order": 2,
+    "esg_category": "social",
+    "topic": "occupational_health_and_safety",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "severity rate",
+      "injury severity rate",
+      "lost day rate",
+      "lost time severity rate",
+      "accident severity rate",
+      "iş kazası ağırlık oranı",
+      "kaza ağırlık oranı",
+      "kayıp gün oranı",
+      "work accident severity rate",
+      "occupational accident severity rate",
+      "lost workday severity rate",
+      "lost day severity rate",
+      "injury severity frequency rate",
+      "accident severity index",
+      "GRI 403-9 severity rate"
+    ],
+    "expected_units": [
+      "rate",
+      "%",
+      "days per 200,000 working hours",
+      "days per 1,000,000 working hours",
+      "lost days per million hours worked",
+      "days/million hours"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 10,
+    "key": "occupational_illness_rate",
+    "question": "Şirketin toplam meslek hastalığı oranı nedir?",
+    "source_column": "N",
+    "original_header": "total occupational illness rate for",
+    "group": "occupational_health_safety",
+    "group_order": 2,
+    "esg_category": "social",
+    "topic": "occupational_health_and_safety",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "occupational illness rate",
+      "occupational disease rate",
+      "work-related ill health rate",
+      "occupational disease frequency rate",
+      "meslek hastalığı oranı",
+      "mesleki hastalık oranı",
+      "recordable occupational disease rate",
+      "occupational disease incidence rate",
+      "work-related ill health frequency rate",
+      "occupational illness frequency rate",
+      "occupational disease cases rate",
+      "GRI 403-10 occupational ill health"
+    ],
+    "expected_units": [
+      "rate",
+      "%",
+      "per 200,000 working hours",
+      "per 1,000,000 working hours",
+      "cases per million hours worked"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 11,
+    "key": "product_quantity",
+    "question": "Şirketin toplam ürettiği ürün miktarı nedir?",
+    "source_column": "O",
+    "original_header": "total quantity of product produced by",
+    "group": "production_materials",
+    "group_order": 3,
+    "esg_category": "environmental",
+    "topic": "resource_use_and_materials",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "product quantity",
+      "production quantity",
+      "production volume",
+      "products produced",
+      "total production",
+      "üretim miktarı",
+      "üretilen ürün miktarı",
+      "toplam üretim",
+      "total products manufactured",
+      "total units produced",
+      "annual production volume",
+      "production output",
+      "number of products produced",
+      "manufacturing output total"
+    ],
+    "expected_units": [
+      "unit",
+      "units",
+      "piece",
+      "pieces",
+      "ton",
+      "tonne",
+      "kg",
+      "m2",
+      "m²"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 12,
+    "key": "raw_material_usage",
+    "question": "Şirketin toplam ham madde kullanımı ne kadardır?",
+    "source_column": "P",
+    "original_header": "total raw material usage for",
+    "group": "production_materials",
+    "group_order": 3,
+    "esg_category": "environmental",
+    "topic": "resource_use_and_materials",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "raw material usage",
+      "materials used",
+      "raw materials consumed",
+      "material consumption",
+      "ham madde kullanımı",
+      "hammadde tüketimi",
+      "malzeme kullanımı",
+      "total materials used",
+      "total raw materials consumed",
+      "materials consumption by weight",
+      "materials used by weight or volume",
+      "GRI 301-1 materials used",
+      "raw material consumption total"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "m3",
+      "m³"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 13,
+    "key": "recycled_raw_materials",
+    "question": "Şirketin kullandığı toplam geri dönüştürülmüş ham madde miktarı nedir?",
+    "source_column": "Q",
+    "original_header": "total amount of recycled raw materials for",
+    "group": "production_materials",
+    "group_order": 3,
+    "esg_category": "environmental",
+    "topic": "resource_use_and_materials",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "recycled raw materials",
+      "recycled input materials",
+      "recycled material used",
+      "secondary raw materials",
+      "geri dönüştürülmüş ham madde",
+      "geri dönüştürülmüş malzeme",
+      "ikincil ham madde",
+      "total recycled input materials used",
+      "recycled materials consumed",
+      "recycled input materials by weight",
+      "secondary materials used",
+      "GRI 301-2 recycled input materials"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "m3",
+      "m³"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 14,
+    "key": "recycled_content_ratio",
+    "question": "Şirketin geri dönüştürülmüş içerik veya ham madde oranı nedir?",
+    "source_column": "R",
+    "original_header": "total recycled content/raw material ratio for",
+    "group": "production_materials",
+    "group_order": 3,
+    "esg_category": "environmental",
+    "topic": "resource_use_and_materials",
+    "expected_answer_type": "percentage",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "recycled content ratio",
+      "recycled material ratio",
+      "percentage of recycled input materials",
+      "recycled content percentage",
+      "geri dönüştürülmüş içerik oranı",
+      "geri dönüştürülmüş ham madde oranı",
+      "percentage of recycled input materials used",
+      "recycled input material percentage",
+      "recycled content share",
+      "recycled material content percentage",
+      "GRI 301-2 recycled content percentage"
+    ],
+    "expected_units": [
+      "%",
+      "percent",
+      "percentage",
+      "ratio"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 15,
+    "key": "petroleum_energy_consumption",
+    "question": "Şirketin petrol veya petrol ürünlerinden kaynaklanan toplam enerji tüketimi ne kadardır?",
+    "source_column": "S",
+    "original_header": "total consumption of energy from petrol/petroleum products for",
+    "group": "energy",
+    "group_order": 4,
+    "esg_category": "environmental",
+    "topic": "energy",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "petroleum energy consumption",
+      "petrol energy consumption",
+      "energy from petroleum products",
+      "fuel oil consumption",
+      "diesel consumption",
+      "petrol ürünleri enerji tüketimi",
+      "petrol kaynaklı enerji tüketimi",
+      "akaryakıt tüketimi",
+      "energy consumption from fuel oil",
+      "energy consumption from diesel",
+      "petroleum products consumption",
+      "liquid fuel energy consumption",
+      "fuel oil energy use",
+      "diesel energy use",
+      "GRI 302-1 petroleum fuel"
+    ],
+    "expected_units": [
+      "GJ",
+      "TJ",
+      "MJ",
+      "MWh",
+      "kWh",
+      "litre",
+      "liter",
+      "L",
+      "ton",
+      "tonne",
+      "toe",
+      "ktoe"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 16,
+    "key": "natural_gas_energy_consumption",
+    "question": "Şirketin doğal gazdan kaynaklanan toplam enerji tüketimi ne kadardır?",
+    "source_column": "T",
+    "original_header": "total consumption of energy from natural gas for",
+    "group": "energy",
+    "group_order": 4,
+    "esg_category": "environmental",
+    "topic": "energy",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "natural gas energy consumption",
+      "natural gas consumption",
+      "energy from natural gas",
+      "gas consumption",
+      "doğal gaz tüketimi",
+      "doğalgaz tüketimi",
+      "doğal gaz kaynaklı enerji tüketimi",
+      "energy consumption from natural gas",
+      "natural gas consumed",
+      "natural gas use",
+      "natural gas energy use",
+      "GRI 302-1 natural gas"
+    ],
+    "expected_units": [
+      "GJ",
+      "TJ",
+      "MJ",
+      "MWh",
+      "kWh",
+      "m3",
+      "m³",
+      "Sm3",
+      "Nm3",
+      "m³ natural gas",
+      "Nm³",
+      "Sm³"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 17,
+    "key": "coal_energy_consumption",
+    "question": "Şirketin kömürden kaynaklanan toplam enerji tüketimi ne kadardır?",
+    "source_column": "U",
+    "original_header": "total consumption of energy from coal for",
+    "group": "energy",
+    "group_order": 4,
+    "esg_category": "environmental",
+    "topic": "energy",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "coal energy consumption",
+      "coal consumption",
+      "energy from coal",
+      "hard coal consumption",
+      "lignite consumption",
+      "kömür tüketimi",
+      "kömür kaynaklı enerji tüketimi",
+      "energy consumption from coal",
+      "coal consumed",
+      "coal energy use",
+      "lignite energy consumption",
+      "hard coal energy use",
+      "GRI 302-1 coal"
+    ],
+    "expected_units": [
+      "GJ",
+      "TJ",
+      "MJ",
+      "MWh",
+      "kWh",
+      "ton",
+      "tonne",
+      "kg",
+      "toe",
+      "ktoe"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 18,
+    "key": "electricity_consumption",
+    "question": "Şirketin toplam elektrik tüketimi ne kadardır?",
+    "source_column": "V",
+    "original_header": "total consumption of energy from electricity for",
+    "group": "energy",
+    "group_order": 4,
+    "esg_category": "environmental",
+    "topic": "energy",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "electricity consumption",
+      "electricity use",
+      "purchased electricity",
+      "electrical energy consumption",
+      "toplam elektrik tüketimi",
+      "elektrik kullanımı",
+      "satın alınan elektrik",
+      "total purchased electricity consumption",
+      "electricity consumed",
+      "electrical energy used",
+      "grid electricity consumption",
+      "indirect electricity consumption",
+      "GRI 302-1 electricity"
+    ],
+    "expected_units": [
+      "kWh",
+      "MWh",
+      "GWh",
+      "GJ",
+      "TJ"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 19,
+    "key": "renewable_electricity_production",
+    "question": "Şirketin yenilenebilir enerji kaynaklarından toplam elektrik üretimi ne kadardır?",
+    "source_column": "W",
+    "original_header": "total electricity production from renewable energy sources for",
+    "group": "energy",
+    "group_order": 4,
+    "esg_category": "environmental",
+    "topic": "energy",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "renewable electricity production",
+      "renewable electricity generated",
+      "electricity generation from renewable sources",
+      "self-generated renewable electricity",
+      "yenilenebilir elektrik üretimi",
+      "yenilenebilir enerjiden elektrik üretimi",
+      "öz tüketim elektrik üretimi",
+      "electricity generated from renewable energy",
+      "renewable energy generation",
+      "onsite renewable electricity generation",
+      "solar electricity generation"
+    ],
+    "expected_units": [
+      "kWh",
+      "MWh",
+      "GWh",
+      "GJ",
+      "TJ",
+      "MW",
+      "MWh/year",
+      "GWh/year"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 20,
+    "key": "energy_intensity",
+    "question": "Şirketin toplam enerji yoğunluğu nedir?",
+    "source_column": "X",
+    "original_header": "total energy intensity for",
+    "group": "energy",
+    "group_order": 4,
+    "esg_category": "environmental",
+    "topic": "energy",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "energy intensity",
+      "energy consumption intensity",
+      "specific energy consumption",
+      "energy use per production",
+      "enerji yoğunluğu",
+      "özgül enerji tüketimi",
+      "birim üretim başına enerji",
+      "energy intensity ratio",
+      "energy consumed per unit of production",
+      "specific energy use",
+      "energy use intensity",
+      "GRI 302-3 energy intensity"
+    ],
+    "expected_units": [
+      "GJ/ton",
+      "GJ/tonne",
+      "MWh/ton",
+      "kWh/unit",
+      "GJ/revenue",
+      "GJ/TRY million",
+      "MWh/TRY million"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 21,
+    "key": "scope_1_emissions",
+    "question": "Şirketin toplam Scope 1 karbon emisyonu ne kadardır?",
+    "source_column": "Y",
+    "original_header": "total scope 1 carbon emission for",
+    "group": "ghg_emissions",
+    "group_order": 5,
+    "esg_category": "environmental",
+    "topic": "greenhouse_gas_emissions",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "Scope 1 emissions",
+      "direct greenhouse gas emissions",
+      "direct GHG emissions",
+      "Scope 1 carbon emissions",
+      "Kapsam 1 emisyonları",
+      "doğrudan sera gazı emisyonları",
+      "doğrudan karbon emisyonları",
+      "gross scope 1 greenhouse gas emissions",
+      "scope 1 GHG emissions",
+      "direct scope 1 emissions",
+      "scope 1 emissions tCO2e",
+      "GRI 305-1 scope 1 emissions"
+    ],
+    "expected_units": [
+      "tCO2e",
+      "ton CO2e",
+      "tonnes CO2e",
+      "kgCO2e",
+      "MtCO2e",
+      "t CO2e",
+      "tonnes of CO2 equivalent",
+      "metric tons CO2e"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 22,
+    "key": "scope_2_emissions",
+    "question": "Şirketin toplam Scope 2 karbon emisyonu ne kadardır?",
+    "source_column": "Z",
+    "original_header": "total scope 2 carbon emission for",
+    "group": "ghg_emissions",
+    "group_order": 5,
+    "esg_category": "environmental",
+    "topic": "greenhouse_gas_emissions",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "Scope 2 emissions",
+      "indirect greenhouse gas emissions from energy",
+      "Scope 2 carbon emissions",
+      "market-based Scope 2",
+      "location-based Scope 2",
+      "Kapsam 2 emisyonları",
+      "dolaylı sera gazı emisyonları",
+      "gross scope 2 greenhouse gas emissions",
+      "scope 2 GHG emissions",
+      "energy indirect greenhouse gas emissions",
+      "market based scope 2 emissions",
+      "location based scope 2 emissions",
+      "GRI 305-2 scope 2 emissions"
+    ],
+    "expected_units": [
+      "tCO2e",
+      "ton CO2e",
+      "tonnes CO2e",
+      "kgCO2e",
+      "MtCO2e",
+      "t CO2e",
+      "tonnes of CO2 equivalent",
+      "metric tons CO2e"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 23,
+    "key": "ghg_emission_intensity",
+    "question": "Şirketin toplam sera gazı emisyon yoğunluğu nedir?",
+    "source_column": "AA",
+    "original_header": "total greenhouse gas emission intensity for",
+    "group": "ghg_emissions",
+    "group_order": 5,
+    "esg_category": "environmental",
+    "topic": "greenhouse_gas_emissions",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "GHG emission intensity",
+      "greenhouse gas emissions intensity",
+      "carbon intensity",
+      "emissions per production",
+      "sera gazı emisyon yoğunluğu",
+      "karbon yoğunluğu",
+      "birim üretim başına emisyon",
+      "greenhouse gas emissions intensity ratio",
+      "GHG intensity ratio",
+      "carbon emissions intensity",
+      "emissions per unit of production",
+      "GRI 305-4 GHG emissions intensity"
+    ],
+    "expected_units": [
+      "tCO2e/ton",
+      "tCO2e/tonne",
+      "kgCO2e/unit",
+      "tCO2e/revenue",
+      "tCO2e/TRY million",
+      "tCO2e/unit",
+      "tCO2e/net sales",
+      "kgCO2e/TRY"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 24,
+    "key": "nox_emissions",
+    "question": "Şirketin toplam NOx emisyonu ne kadardır?",
+    "source_column": "AB",
+    "original_header": "total NOx for",
+    "group": "air_pollutants",
+    "group_order": 6,
+    "esg_category": "environmental",
+    "topic": "air_pollutant_emissions",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "NOx emissions",
+      "nitrogen oxides emissions",
+      "nitrogen oxide emissions",
+      "NOx",
+      "azot oksit emisyonları",
+      "NOx emisyonu",
+      "total nitrogen oxides emissions",
+      "nitrogen oxides NOx emissions",
+      "NOx emissions total",
+      "NOx tonnes",
+      "GRI 305-7 NOx"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "t",
+      "tons"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 25,
+    "key": "sox_emissions",
+    "question": "Şirketin toplam SOx emisyonu ne kadardır?",
+    "source_column": "AC",
+    "original_header": "total SOx for",
+    "group": "air_pollutants",
+    "group_order": 6,
+    "esg_category": "environmental",
+    "topic": "air_pollutant_emissions",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "SOx emissions",
+      "sulfur oxides emissions",
+      "sulphur oxides emissions",
+      "SOx",
+      "kükürt oksit emisyonları",
+      "SOx emisyonu",
+      "total sulfur oxides emissions",
+      "total sulphur oxides emissions",
+      "sulfur oxides SOx emissions",
+      "SOx emissions total",
+      "GRI 305-7 SOx"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "t",
+      "tons"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 26,
+    "key": "pm_emissions",
+    "question": "Şirketin toplam partikül madde (PM) emisyonu ne kadardır?",
+    "source_column": "AD",
+    "original_header": "total PM (particulate matters) for",
+    "group": "air_pollutants",
+    "group_order": 6,
+    "esg_category": "environmental",
+    "topic": "air_pollutant_emissions",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "PM emissions",
+      "particulate matter emissions",
+      "particulates emissions",
+      "dust emissions",
+      "partikül madde emisyonları",
+      "toz emisyonları",
+      "PM emisyonu",
+      "total particulate matter emissions",
+      "particulate emissions total",
+      "dust and particulate emissions",
+      "PM emissions total",
+      "GRI 305-7 particulate matter"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "t",
+      "tons"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 27,
+    "key": "voc_emissions",
+    "question": "Şirketin toplam uçucu organik bileşik (VOC) emisyonu ne kadardır?",
+    "source_column": "AE",
+    "original_header": "total VOC (Volatile organic compounds) for",
+    "group": "air_pollutants",
+    "group_order": 6,
+    "esg_category": "environmental",
+    "topic": "air_pollutant_emissions",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "VOC emissions",
+      "volatile organic compound emissions",
+      "volatile organic compounds",
+      "VOC",
+      "uçucu organik bileşik emisyonları",
+      "VOC emisyonu",
+      "total volatile organic compound emissions",
+      "VOC emissions total",
+      "volatile organic compounds emissions total",
+      "total organic carbon emissions",
+      "TOC and VOC emissions",
+      "GRI 305-7 VOC"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "t",
+      "tons"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 28,
+    "key": "pop_emissions",
+    "question": "Şirketin toplam kalıcı organik kirletici (POP) emisyonu ne kadardır?",
+    "source_column": "AF",
+    "original_header": "total POP (Persistent organic pollutants) for",
+    "group": "air_pollutants",
+    "group_order": 6,
+    "esg_category": "environmental",
+    "topic": "air_pollutant_emissions",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "POP emissions",
+      "persistent organic pollutant emissions",
+      "persistent organic pollutants",
+      "POP",
+      "kalıcı organik kirletici emisyonları",
+      "POP emisyonu",
+      "total persistent organic pollutant emissions",
+      "persistent organic pollutants emissions total",
+      "POP emissions total",
+      "GRI 305-7 persistent organic pollutants"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "t",
+      "tons"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 29,
+    "key": "hap_emissions",
+    "question": "Şirketin toplam tehlikeli hava kirletici (HAP) emisyonu ne kadardır?",
+    "source_column": "AG",
+    "original_header": "total HAP (Hazardous air pollutants) for",
+    "group": "air_pollutants",
+    "group_order": 6,
+    "esg_category": "environmental",
+    "topic": "air_pollutant_emissions",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "HAP emissions",
+      "hazardous air pollutant emissions",
+      "hazardous air pollutants",
+      "HAP",
+      "tehlikeli hava kirletici emisyonları",
+      "HAP emisyonu",
+      "total hazardous air pollutant emissions",
+      "hazardous air pollutants emissions total",
+      "HAP emissions total",
+      "GRI 305-7 hazardous air pollutants"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "t",
+      "tons"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 30,
+    "key": "water_consumption",
+    "question": "Şirketin toplam su tüketimi ne kadardır?",
+    "source_column": "AH",
+    "original_header": "total water consumption for",
+    "group": "water",
+    "group_order": 7,
+    "esg_category": "environmental",
+    "topic": "water",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "water consumption",
+      "total water consumed",
+      "net water consumption",
+      "water use",
+      "su tüketimi",
+      "toplam su kullanımı",
+      "tüketilen su",
+      "total water consumption",
+      "water consumed total",
+      "net water consumed",
+      "operational water consumption",
+      "GRI 303-5 water consumption",
+      "environmental performance indicators water consumption"
+    ],
+    "expected_units": [
+      "m3",
+      "m³",
+      "ML",
+      "megalitre",
+      "litre",
+      "liter",
+      "cubic meter",
+      "cubic meters",
+      "cubic metre",
+      "cubic metres",
+      "thousand m3",
+      "thousand m³"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 31,
+    "key": "water_intensity",
+    "question": "Şirketin toplam su yoğunluğu nedir?",
+    "source_column": "AI",
+    "original_header": "total water intensity for",
+    "group": "water",
+    "group_order": 7,
+    "esg_category": "environmental",
+    "topic": "water",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "water intensity",
+      "water consumption intensity",
+      "specific water consumption",
+      "water use per production",
+      "su yoğunluğu",
+      "özgül su tüketimi",
+      "birim üretim başına su",
+      "water consumption intensity ratio",
+      "specific water use",
+      "water consumed per unit of production",
+      "water use intensity",
+      "water intensity ratio",
+      "environmental performance indicators water intensity"
+    ],
+    "expected_units": [
+      "m3/ton",
+      "m³/ton",
+      "m3/unit",
+      "m³/unit",
+      "m3/revenue",
+      "m³/revenue",
+      "m3/product",
+      "m³/product",
+      "m3/net sales",
+      "m³/net sales"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 32,
+    "key": "water_withdrawal",
+    "question": "Şirketin toplam su çekimi ne kadardır?",
+    "source_column": "AJ",
+    "original_header": "total water withdrawal for",
+    "group": "water",
+    "group_order": 7,
+    "esg_category": "environmental",
+    "topic": "water",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "water withdrawal",
+      "total water withdrawals",
+      "water abstraction",
+      "water intake",
+      "su çekimi",
+      "çekilen su",
+      "su alımı",
+      "total water withdrawal",
+      "total water withdrawn",
+      "water withdrawn by source",
+      "freshwater withdrawal",
+      "water abstraction total",
+      "GRI 303-3 water withdrawal",
+      "environmental performance indicators water withdrawal"
+    ],
+    "expected_units": [
+      "m3",
+      "m³",
+      "ML",
+      "megalitre",
+      "litre",
+      "liter",
+      "cubic meter",
+      "cubic meters",
+      "cubic metre",
+      "cubic metres",
+      "thousand m3",
+      "thousand m³"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 33,
+    "key": "water_recycled",
+    "question": "Şirketin geri dönüştürdüğü toplam su miktarı ne kadardır?",
+    "source_column": "AK",
+    "original_header": "total water recycled for",
+    "group": "water",
+    "group_order": 7,
+    "esg_category": "environmental",
+    "topic": "water",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "water recycled",
+      "recycled water",
+      "water reused",
+      "reused water",
+      "recycled and reused water",
+      "geri dönüştürülen su",
+      "yeniden kullanılan su",
+      "geri kazanılan su",
+      "total recycled water",
+      "total reused water",
+      "water recycled and reused",
+      "recycled water volume",
+      "reused water volume",
+      "water recovered for reuse",
+      "environmental performance indicators recycled water"
+    ],
+    "expected_units": [
+      "m3",
+      "m³",
+      "ML",
+      "megalitre",
+      "litre",
+      "liter",
+      "cubic meter",
+      "cubic meters",
+      "cubic metre",
+      "cubic metres",
+      "thousand m3",
+      "thousand m³"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 34,
+    "key": "hazardous_waste",
+    "question": "Şirketin toplam tehlikeli atık miktarı ne kadardır?",
+    "source_column": "AL",
+    "original_header": "total hazardous waste of",
+    "group": "waste",
+    "group_order": 8,
+    "esg_category": "environmental",
+    "topic": "waste",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "hazardous waste",
+      "total hazardous waste generated",
+      "hazardous waste generation",
+      "tehlikeli atık",
+      "tehlikeli atık miktarı",
+      "oluşan tehlikeli atık",
+      "hazardous waste generated by weight",
+      "hazardous waste total",
+      "GRI 306-3 hazardous waste",
+      "environmental performance indicators hazardous waste"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "t",
+      "tons",
+      "metric tonnes"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 35,
+    "key": "non_hazardous_waste",
+    "question": "Şirketin toplam tehlikesiz atık miktarı ne kadardır?",
+    "source_column": "AM",
+    "original_header": "total non-hazardous waste of",
+    "group": "waste",
+    "group_order": 8,
+    "esg_category": "environmental",
+    "topic": "waste",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "non-hazardous waste",
+      "total non-hazardous waste generated",
+      "nonhazardous waste",
+      "tehlikesiz atık",
+      "tehlikesiz atık miktarı",
+      "oluşan tehlikesiz atık",
+      "total non hazardous waste generated",
+      "non-hazardous waste generated by weight",
+      "non hazardous waste total",
+      "GRI 306-3 non hazardous waste",
+      "environmental performance indicators non hazardous waste"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "t",
+      "tons",
+      "metric tonnes"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 36,
+    "key": "waste_to_landfill",
+    "question": "Şirketin düzenli depolamaya gönderdiği toplam atık miktarı ne kadardır?",
+    "source_column": "AN",
+    "original_header": "total waste to landfill for",
+    "group": "waste",
+    "group_order": 8,
+    "esg_category": "environmental",
+    "topic": "waste",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "waste to landfill",
+      "landfilled waste",
+      "waste disposed to landfill",
+      "landfill disposal",
+      "düzenli depolamaya gönderilen atık",
+      "depolanan atık",
+      "bertaraf edilen atık",
+      "total waste sent to landfill",
+      "waste disposed by landfill",
+      "landfill waste total",
+      "waste directed to disposal landfill",
+      "GRI 306-5 waste to landfill"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "t",
+      "tons",
+      "metric tonnes"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 37,
+    "key": "recycled_waste",
+    "question": "Şirketin geri dönüştürdüğü toplam atık miktarı ne kadardır?",
+    "source_column": "AO",
+    "original_header": "total recycled waste for",
+    "group": "waste",
+    "group_order": 8,
+    "esg_category": "environmental",
+    "topic": "waste",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "recycled waste",
+      "waste recycled",
+      "waste sent for recycling",
+      "recycling waste",
+      "geri dönüştürülen atık",
+      "geri dönüşüme gönderilen atık",
+      "total waste recycled",
+      "waste diverted from disposal by recycling",
+      "waste sent to recycling total",
+      "recycled waste by weight",
+      "GRI 306-4 recycled waste"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "t",
+      "tons",
+      "metric tonnes"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 38,
+    "key": "recovered_waste",
+    "question": "Şirketin geri kazandığı toplam atık miktarı ne kadardır?",
+    "source_column": "AP",
+    "original_header": "total recovered waste for",
+    "group": "waste",
+    "group_order": 8,
+    "esg_category": "environmental",
+    "topic": "waste",
+    "expected_answer_type": "number",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "recovered waste",
+      "waste recovered",
+      "waste diverted from disposal",
+      "waste recovery",
+      "geri kazanılan atık",
+      "atık geri kazanımı",
+      "bertaraftan yönlendirilen atık",
+      "total waste recovered",
+      "waste diverted from disposal total",
+      "waste recovery total",
+      "recovered waste by weight",
+      "GRI 306-4 recovered waste"
+    ],
+    "expected_units": [
+      "ton",
+      "tonne",
+      "kg",
+      "metric ton",
+      "t",
+      "tons",
+      "metric tonnes"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report"
+    ]
+  },
+  {
+    "id": 39,
+    "key": "net_sales_revenue",
+    "question": "Şirketin toplam net satış geliri ne kadardır?",
+    "source_column": "AQ",
+    "original_header": "total net sales revenue of",
+    "group": "economic_performance",
+    "group_order": 9,
+    "esg_category": "economic",
+    "topic": "economic_performance",
+    "expected_answer_type": "currency",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "net sales revenue",
+      "net sales",
+      "sales revenue",
+      "revenue from sales",
+      "net revenue",
+      "net satış geliri",
+      "net satışlar",
+      "satış hasılatı",
+      "total net sales",
+      "consolidated net sales",
+      "net sales revenue total",
+      "sales revenue total",
+      "revenue from contracts with customers",
+      "NOTE 25 SALES total"
+    ],
+    "expected_units": [
+      "TRY",
+      "TL",
+      "USD",
+      "EUR",
+      "GBP",
+      "million TRY",
+      "billion TRY",
+      "million USD",
+      "billion USD",
+      "million EUR",
+      "billion EUR",
+      "TRY million",
+      "TL million",
+      "TRY thousand",
+      "TL thousand"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "annual_report",
+      "financial_report",
+      "sustainability_report"
+    ]
+  },
+  {
+    "id": 40,
+    "key": "generated_economic_value",
+    "question": "Şirketin yarattığı toplam ekonomik değer ne kadardır?",
+    "source_column": "AR",
+    "original_header": "generated economic value of",
+    "group": "economic_performance",
+    "group_order": 9,
+    "esg_category": "economic",
+    "topic": "economic_performance",
+    "expected_answer_type": "currency",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "generated economic value",
+      "direct economic value generated",
+      "economic value generated",
+      "value generated",
+      "yaratılan ekonomik değer",
+      "doğrudan yaratılan ekonomik değer",
+      "ekonomik değer",
+      "economic value generated and distributed",
+      "total economic value generated",
+      "revenue economic value generated",
+      "GRI 201-1 direct economic value generated"
+    ],
+    "expected_units": [
+      "TRY",
+      "TL",
+      "USD",
+      "EUR",
+      "GBP",
+      "million TRY",
+      "billion TRY",
+      "million USD",
+      "billion USD",
+      "million EUR",
+      "billion EUR",
+      "TRY million",
+      "TL million",
+      "TRY thousand",
+      "TL thousand"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "sustainability_report",
+      "annual_report",
+      "financial_report"
+    ]
+  },
+  {
+    "id": 41,
+    "key": "net_profit",
+    "question": "Şirketin toplam net kârı ne kadardır?",
+    "source_column": "AS",
+    "original_header": "total net profit of",
+    "group": "economic_performance",
+    "group_order": 9,
+    "esg_category": "economic",
+    "topic": "economic_performance",
+    "expected_answer_type": "currency",
+    "retrieval_strategy": "table_first",
+    "aliases": [
+      "net profit",
+      "net income",
+      "profit for the year",
+      "profit attributable to owners",
+      "net earnings",
+      "net kâr",
+      "dönem net kârı",
+      "net dönem kârı",
+      "total net profit",
+      "consolidated net profit",
+      "net profit for the year",
+      "profit attributable to equity holders of the parent",
+      "profit attributable to owners of the parent",
+      "income statement net profit"
+    ],
+    "expected_units": [
+      "TRY",
+      "TL",
+      "USD",
+      "EUR",
+      "GBP",
+      "million TRY",
+      "billion TRY",
+      "million USD",
+      "billion USD",
+      "million EUR",
+      "billion EUR",
+      "TRY million",
+      "TL million",
+      "TRY thousand",
+      "TL thousand"
+    ],
+    "preferred_sources": [
+      "table",
+      "text"
+    ],
+    "preferred_document_types": [
+      "annual_report",
+      "financial_report",
+      "sustainability_report"
+    ]
+  }
+]

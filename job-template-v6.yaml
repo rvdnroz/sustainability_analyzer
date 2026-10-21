@@ -1,0 +1,70 @@
+containers:
+  - name: sustainability-analyzer
+    image: exampleacr.azurecr.io/sustainability-analyzer:v6
+    imageType: ContainerImage
+
+    command:
+    - python
+    - -u
+
+    args:
+    - main.py
+    - --data-directory
+    - /app/data
+    - batch
+    - --company
+    - "Example Company"
+    - --year
+    - "2023"
+    - --report-id
+    - example_2023
+    - --skip-ingestion
+    - --restore-from-blob
+    - --restore-prefix
+    - reports/example_2023
+    - --questions-file
+    - /app/config_data/questions.json
+    - --output-directory
+    - /app/outputs
+    - --llm-provider
+    - groq
+    - --llm-model
+    - qwen/qwen3.6-27b
+    - --disable-vlm-fallback
+    - --disable-vision-fallback
+    - --sync-to-blob
+    - --sync-required
+    - --blob-prefix
+    - reports/example_2023/results
+
+    env:
+      - name: STORAGE_BACKEND
+        value: azure_blob
+
+      - name: AZURE_STORAGE_CONNECTION_STRING
+        secretRef: storage-connection
+
+      - name: AZURE_STORAGE_CONTAINER
+        value: example-data
+
+      - name: GROQ_API_KEY
+        secretRef: groq-api-key
+
+      - name: EXA_API_KEY
+        secretRef: exa-api-key
+
+      - name: LLM_PROVIDER
+        value: groq
+
+      - name: LLM_MODEL
+        value: qwen/qwen3.6-27b
+
+      - name: SYNC_TO_BLOB
+        value: "true"
+
+    resources:
+      cpu: 2
+      memory: 4Gi
+
+initContainers: []
+volumes: []
